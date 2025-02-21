@@ -105,25 +105,25 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Job IT",
+    name: "Estate flex",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to list their real estate properties, view estimated price ranges for properties, and locate available holdings based on preferable location.",
     tags: [
       {
-        name: "react",
+        name: "Next js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Tailwind Css",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Mongo DB",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/TusharB45/Estate-Flex",
   },
   {
     name: "Trip Guide",
@@ -131,7 +131,7 @@ const projects = [
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
