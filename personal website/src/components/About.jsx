@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-black text-[17px] max-w-s leading-[30px] text-center '
       >
-        I’m a proficient software developer with a background in TypeScript and JavaScript, specializing in frameworks such as React, Node.js, and Three.js. I adapt quickly to new challenges and work hand-in-hand with clients to deliver scalable, effective, and user-centric solutions that address real-world needs. I’d love to collaborate and turn your vision into reality!
+        Hey, I’m Tushar Borse!I’m a BSc IT graduate from Mumbai University, currently working as a Trainee at HERE Technologies. I love building web apps and working with modern tech stacks. One of my key projects is Estate Flex – a property listing platform I built using Next.js, React, Node.js, and MongoDB. It was a fun hands-on experience where I got to work on both the front-end and back-end, building a fully functional app for property rentals and sales. I’m always exploring new technologies and looking to grow as a developer. Feel free to check out my work or reach out!
       </motion.p>
 
       <div className='flex justify-center mt-10 flex-wrap gap-10'>
