@@ -126,20 +126,20 @@ const projects = [
     source_code_link: "https://github.com/TusharB45/Estate-Flex",
   },
   {
-    name: "Trip Guide",
+    name: "xyz",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "N/A",
     tags: [
       {
-        name: "react",
+        name: "N/A",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "N/Ae",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "N/A",
         color: "pink-text-gradient",
       },
     ],
