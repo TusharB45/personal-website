@@ -45,9 +45,9 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div className={`mt-12 bg-white rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-white rounded-2xl ${styles.padding} min-h-[300px]  `}
       >
         <motion.div className = "text-center " variants={textVariant()}>
           <p className={styles.sectionSubText} >What others say</p>
@@ -64,3 +64,10 @@ const Feedbacks = () => {
 };
 
 export default SectionWrapper(Feedbacks, "");
+
+
+
+
+
+
+

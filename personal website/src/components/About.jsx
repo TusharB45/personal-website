@@ -8,10 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full '>
+  <Tilt className='xs:w-[150px] w-10'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '
+      className='w-full green-pink-gradient p-[5px] rounded-[20px] shadow-card '
     >
       <div
         options={{
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg- rounded-[20px] py-5 px-12 min-h-[190px]  flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-black text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -37,25 +37,25 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div className = "text-center "variants={textVariant()}>
+    <div className="bg-white rounded-2xl min-h-[630px] ">
+      <motion.div className = "text-center pt-12  "variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-black text-[17px] max-w-s leading-[30px] text-center '
       >
         I’m a proficient software developer with a background in TypeScript and JavaScript, specializing in frameworks such as React, Node.js, and Three.js. I adapt quickly to new challenges and work hand-in-hand with clients to deliver scalable, effective, and user-centric solutions that address real-world needs. I’d love to collaborate and turn your vision into reality!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10 '>
+      <div className='flex justify-center mt-10 flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

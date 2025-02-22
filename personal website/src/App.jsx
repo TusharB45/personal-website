@@ -14,7 +14,7 @@ const StarsCanvas = lazy(() => import('./components/canvas/Stars'));
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-black'>
+      <div className='relative z-0 bg-[#915EFF]'>
         
         {/* Suspense fallback for loading state */}
         <Suspense fallback={<div>Loading...</div>}>
@@ -32,14 +32,15 @@ const App = () => {
           <Feedbacks />
           
           {/* Contact section with StarsCanvas */}
-          <div className='relative z-0'>
-            <Contact />
-            <StarsCanvas />
-          </div>
+          
 
         </Suspense>
         
       </div>
+      <div className='relative z-0'>
+            <Contact />
+            <StarsCanvas />
+          </div>
     </BrowserRouter>
   );
 }

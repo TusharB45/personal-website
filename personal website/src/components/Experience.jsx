@@ -17,7 +17,12 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "#915EFF",
-        color: "#fff",
+        color: "#000000",
+        border: "10px solid #915EFF",
+        borderRadius: "10px",
+        boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)",
+
+        
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -33,9 +38,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-black text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-black text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -46,7 +51,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='text-black text-[14px] pl-1 tracking-wider'
           >
             {point}
           </li>
@@ -58,8 +63,8 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <div className = "bg-white rounded-2xl min-h-[630px] pt-12">
+      <motion.div  variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
@@ -69,7 +74,7 @@ const Experience = () => {
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+        <VerticalTimeline >
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
@@ -78,7 +83,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 
