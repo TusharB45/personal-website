@@ -47,8 +47,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-black text-[17px] max-w-s leading-[30px] text-center '
       >
-        Hey, I’m Tushar Borse!I’m a BSc IT graduate from Mumbai University, currently working as a Trainee at HERE Technologies. I love building web apps and working with modern tech stacks. I’m always exploring new technologies and looking to grow as a developer. Feel free to check out my work or reach out!
-        
+        Hey, I’m Tushar Borse!I’m a BSc IT graduate from Mumbai University, currently working as a Trainee at HERE Technologies. I love explore IT field and working with modern technologies. I’m always exploring new field and looking to. Feel free to check out my work or reach out!
+
       </motion.p>
 
       <div className='flex justify-center mt-10 flex-wrap gap-10'>
